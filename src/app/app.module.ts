@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { DropdownModule } from 'ng2-bootstrap';
 
+import { AppRoutes } from './app.routes';
 import { MainComponent } from './main.component';
 import { MoviesComponent } from './movies/movies.component';
 import { TvshowsComponent } from './tvshows/tvshows.component';
@@ -19,11 +20,7 @@ import { TvshowsComponent } from './tvshows/tvshows.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      { path: '', redirectTo: 'movies', pathMatch: 'full' },
-      { path: 'movies', component: MoviesComponent},
-      { path: 'tvshows', component: TvshowsComponent}
-    ]),
+    RouterModule.forRoot(AppRoutes),
     DropdownModule
   ],
   providers: [],
