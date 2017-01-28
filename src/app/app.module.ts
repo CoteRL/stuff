@@ -7,23 +7,33 @@ import { DropdownModule } from 'ng2-bootstrap';
 
 import { AppRoutes } from './app.routes';
 import { MainComponent } from './main.component';
+
 import { MoviesComponent } from './movies/movies.component';
-import { MovieComponent } from './movie/movie.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+
 import { TvshowsComponent } from './tvshows/tvshows.component';
-import { TvshowComponent } from './tvshow/tvshow.component';
+import { TvshowDetailComponent } from './tvshow-detail/tvshow-detail.component';
 import { TvshowSeasonsComponent } from './tvshow-seasons/tvshow-seasons.component';
 import { TvshowEpisodesComponent } from './tvshow-episodes/tvshow-episodes.component';
+import { TvshowEpisodeDetailComponent } from './tvshow-episode-detail/tvshow-episode-detail.component';
+import { FiltersComponent } from './filters/filters.component';
+import { ResultListComponent } from './result-list/result-list.component';
+
 
 
 @NgModule({
   declarations: [
     MainComponent,
     MoviesComponent,
-    MovieComponent,
+    MovieDetailComponent,
     TvshowsComponent,
-    TvshowComponent,
+    TvshowDetailComponent,
     TvshowSeasonsComponent,
-    TvshowEpisodesComponent
+    TvshowEpisodesComponent,
+    TvshowEpisodeDetailComponent,
+    TvshowDetailComponent,
+    FiltersComponent,
+    ResultListComponent
   ],
   imports: [
     BrowserModule,
